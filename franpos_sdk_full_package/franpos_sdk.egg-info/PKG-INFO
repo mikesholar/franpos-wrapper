@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: franpos_sdk
+Version: 0.1.0
+Summary: Python SDK for querying the FranPOS public API
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+
+
+# franpos_sdk
+
+A simple Python SDK for querying the [FranPOS Public API](https://publicapi.franpos.com/Help).
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+from franpos_sdk import FranPOSClient
+
+client = FranPOSClient(api_key="YOUR_API_KEY")
+customer = client.customer.get_by_id(customer_id=1234, location_id=1)
+```

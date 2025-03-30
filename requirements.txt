@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+franpos_sdk @ file:///franpos_sdk_full_package

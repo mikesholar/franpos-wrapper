@@ -1,0 +1,20 @@
+
+[project]
+name = "franpos_sdk"
+version = "0.1.0"
+description = "Python SDK for querying the FranPOS public API"
+authors = [
+    { name="Your Name", email="your.email@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.25.1"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
